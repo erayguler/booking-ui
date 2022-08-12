@@ -1,0 +1,66 @@
+.Header {
+  &-logo {
+    width: 200px;
+    height: 35px;
+
+    img {
+      width: 100%;
+    }
+  }
+  border-bottom: 1px solid #ddd;
+  .container {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  &-menu {
+    margin-left: auto;
+    display: flex;
+
+    &-logo {
+      img {
+        width: 288px;
+      }
+    }
+
+    &-user {
+      display: flex;
+      a {
+        display: inline-flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: $finger-size;
+        align-items: flex;
+
+        &:hover {
+          background-color: #eee;
+        }
+      }
+    }
+    &-helper {
+      display: flex;
+      margin-left: 20px;
+      select {
+        appearance: none;
+        background-color: transparent;
+        border: 1px solid #e0e6f1;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: $finger-size;
+        border-radius: 0;
+        color: $color-navy;
+        font-weight: bold;
+        &:nth-child(1) {
+          border-bottom-left-radius: $border-radius;
+          border-top-left-radius: $border-radius;
+        }
+        &:nth-child(2) {
+          border-left-width: 0;
+          border-bottom-right-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+        }
+      }
+    }
+  }
+}
